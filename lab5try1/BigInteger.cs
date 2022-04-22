@@ -242,6 +242,11 @@ namespace lab5try1
             }
 
 
+           while (!(Math.Ceiling(Math.Log(len) / Math.Log(2)) == Math.Floor(Math.Log(len) / Math.Log(2))))
+            { 
+                len++;
+            }
+
             string leadingZero = "";
             for (int i = 0; i < len - this._numbers.Length; i++)
             {
@@ -253,7 +258,7 @@ namespace lab5try1
         
 
             leadingZero = "";
-            for (int i = 0; i < len - this._numbers.Length; i++)
+            for (int i = 0; i < len - another._numbers.Length; i++)
             {
                 leadingZero = leadingZero + "0";
 
@@ -262,8 +267,7 @@ namespace lab5try1
             BigInteger y = new BigInteger(leadingZero);
 
 
-            if (len == 1)
-            {
+            if (len == 1)            {
                 result = new BigInteger(Convert.ToString(this._numbers[0] * another._numbers[0]));
             }
             else
