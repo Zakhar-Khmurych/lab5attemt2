@@ -7,8 +7,8 @@ namespace lab5try1
         static void Main(string[] args)
         {
 
-            BigInteger x = new BigInteger("12");
-            BigInteger y = new BigInteger("34");
+            BigInteger x = new BigInteger("1234567");
+            BigInteger y = new BigInteger("1234");
             
             
             Console.WriteLine(x+y);
