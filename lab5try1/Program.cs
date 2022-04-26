@@ -8,7 +8,7 @@ namespace lab5try1
         {
 
             BigInteger x = new BigInteger("002");
-            BigInteger y = new BigInteger("0001");
+            BigInteger y = new BigInteger("001");
             
             
             Console.WriteLine(x+y);
